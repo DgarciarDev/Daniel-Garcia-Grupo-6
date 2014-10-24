@@ -22,6 +22,7 @@
 		0C395FAE19F9C1E700D1BD46 /* ConverterOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C395FAD19F9C1E700D1BD46 /* ConverterOneViewController.m */; };
 		0C395FB119F9C27300D1BD46 /* Temperature.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C395FB019F9C27300D1BD46 /* Temperature.m */; };
 		0C395FB719F9DD5600D1BD46 /* ConverterTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C395FB619F9DD5600D1BD46 /* ConverterTwoViewController.m */; };
+		F300D73319FA837D00E806D2 /* ConverterThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F300D73219FA837D00E806D2 /* ConverterThreeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,8 @@
 		0C395FB019F9C27300D1BD46 /* Temperature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Temperature.m; sourceTree = "<group>"; };
 		0C395FB519F9DD5600D1BD46 /* ConverterTwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConverterTwoViewController.h; sourceTree = "<group>"; };
 		0C395FB619F9DD5600D1BD46 /* ConverterTwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConverterTwoViewController.m; sourceTree = "<group>"; };
+		F300D73119FA837D00E806D2 /* ConverterThreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConverterThreeViewController.h; sourceTree = "<group>"; };
+		F300D73219FA837D00E806D2 /* ConverterThreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConverterThreeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +163,8 @@
 				0C395FAD19F9C1E700D1BD46 /* ConverterOneViewController.m */,
 				0C395FB519F9DD5600D1BD46 /* ConverterTwoViewController.h */,
 				0C395FB619F9DD5600D1BD46 /* ConverterTwoViewController.m */,
+				F300D73119FA837D00E806D2 /* ConverterThreeViewController.h */,
+				F300D73219FA837D00E806D2 /* ConverterThreeViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -278,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F300D73319FA837D00E806D2 /* ConverterThreeViewController.m in Sources */,
 				0C395FB719F9DD5600D1BD46 /* ConverterTwoViewController.m in Sources */,
 				0C395FB119F9C27300D1BD46 /* Temperature.m in Sources */,
 				0C395FAE19F9C1E700D1BD46 /* ConverterOneViewController.m in Sources */,
@@ -474,6 +480,7 @@
 				0C395F9C19F9B5DB00D1BD46 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0C395F9D19F9B5DB00D1BD46 /* Build configuration list for PBXNativeTarget "ConvertidorTemperaturaTests" */ = {
 			isa = XCConfigurationList;
@@ -482,6 +489,7 @@
 				0C395F9F19F9B5DB00D1BD46 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

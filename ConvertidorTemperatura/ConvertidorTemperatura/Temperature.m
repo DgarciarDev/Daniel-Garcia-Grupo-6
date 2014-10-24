@@ -35,7 +35,17 @@
     return [NSString stringWithFormat:@"%.02f ºC",(celsius)];
 }
 
+-(NSString *) convertKtoF:(float)valueToConvert{
+    farenheit = ((valueToConvert-273.15f)*1.8000f)+32;
+    
+    return [NSString stringWithFormat:@"%.02f ºK",(farenheit)];
+}
 
+-(NSString *) convertFtoK:(float)valueToConvert{
+    kelvin = ((valueToConvert-32)/1.8000f)+273.15f;
+    
+    return [NSString stringWithFormat:@"%.02f ºC",(kelvin)];
+}
 @end
 
 

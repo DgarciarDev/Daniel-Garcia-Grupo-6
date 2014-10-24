@@ -154,10 +154,10 @@
             </objects>
             <point key="canvasLocation" x="1171" y="268"/>
         </scene>
-        <!--Item-->
+        <!--K a F-->
         <scene sceneID="M4G-m0-Nzt">
             <objects>
-                <viewController id="u7Z-V5-oQg" sceneMemberID="viewController">
+                <viewController id="u7Z-V5-oQg" customClass="ConverterThreeViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Mu9-c7-NUf"/>
                         <viewControllerLayoutGuide type="bottom" id="gJt-KQ-pwg"/>
@@ -172,23 +172,17 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="convertKtoCButton:" destination="u4q-Dm-h5S" eventType="touchUpInside" id="oQb-uv-o7G"/>
+                                    <action selector="convertFtoKButton:" destination="u7Z-V5-oQg" eventType="touchUpInside" id="PG9-m2-ld5"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gHO-pe-odS">
-                                <rect key="frame" x="112" y="191" width="97" height="30"/>
+                                <rect key="frame" x="112" y="187" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lyI-oX-dBT">
-                                <rect key="frame" x="187" y="261" width="117" height="30"/>
-                                <state key="normal" title="Convertir ºK a ºF">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
                                 <connections>
-                                    <action selector="convertCtoKButton:" destination="u4q-Dm-h5S" eventType="touchUpInside" id="XR3-4c-U3W"/>
+                                    <action selector="valueTxt:" destination="u7Z-V5-oQg" eventType="editingDidEnd" id="tmu-v0-QrQ"/>
                                 </connections>
-                            </button>
+                            </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Convertidor de Farenheit vs Kelvin" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d4A-ic-wbg">
                                 <rect key="frame" x="56" y="28" width="209" height="128"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="31"/>
@@ -196,19 +190,32 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Resultado" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vMX-wZ-cNn">
-                                <rect key="frame" x="121" y="322" width="78" height="21"/>
+                                <rect key="frame" x="121" y="320" width="78" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lyI-oX-dBT">
+                                <rect key="frame" x="187" y="261" width="117" height="30"/>
+                                <state key="normal" title="Convertir ºK a ºF">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="convertKtoFButton:" destination="u7Z-V5-oQg" eventType="touchUpInside" id="ugR-Uc-EmN"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="8j8-Jg-rJj"/>
+                    <tabBarItem key="tabBarItem" title="K a F" image="icontemp.png" id="8j8-Jg-rJj"/>
+                    <connections>
+                        <outlet property="resultTxt" destination="vMX-wZ-cNn" id="21R-P9-iwD"/>
+                        <outlet property="valueTxt" destination="gHO-pe-odS" id="MYu-Ks-25b"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SyH-eY-13M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1552" y="268"/>
+            <point key="canvasLocation" x="1548" y="268"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="6sg-QA-9uv">
@@ -224,7 +231,7 @@
                         <segue destination="vXZ-lx-hvc" kind="relationship" relationship="viewControllers" id="rV3-BG-hzk"/>
                         <segue destination="lth-S5-HOY" kind="relationship" relationship="viewControllers" id="tBS-DG-2Ne"/>
                         <segue destination="u4q-Dm-h5S" kind="relationship" relationship="viewControllers" id="ycg-Np-ceb"/>
-                        <segue destination="u7Z-V5-oQg" kind="relationship" relationship="viewControllers" id="hce-6S-3cM"/>
+                        <segue destination="u7Z-V5-oQg" kind="relationship" relationship="viewControllers" id="TDg-6q-hIN"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YBn-tp-YIL" userLabel="First Responder" sceneMemberID="firstResponder"/>
